@@ -14,8 +14,8 @@ public class Main {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
 
-        Rearrange r = new Rearrange();
-        Rearrange.rearr(A);
+        QuickSort q = new QuickSort();
+        q.quickSort(A,0, A.length - 1);
         System.out.println(Arrays.toString(A));
 
     }
