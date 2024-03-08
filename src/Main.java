@@ -14,8 +14,8 @@ public class Main {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
 
-        QuickSort q = new QuickSort();
-        q.quickSort(A,0, A.length - 1);
+        InsertionSort i = new InsertionSort();
+        i.insertionSort(A);
         System.out.println(Arrays.toString(A));
 
     }
