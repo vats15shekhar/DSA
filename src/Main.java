@@ -3,6 +3,7 @@
 
 
 import ArraysAdvanced.FindFirstMissingPositiveInteger;
+import ArraysAdvanced.KadanesAlgo;
 import SortingAlgorithms.CustomComparator;
 import SortingAlgorithms.InsertionSort;
 
@@ -22,11 +23,12 @@ public class Main {
         CustomComparator c = new CustomComparator();
         c.customComparator(A);*/
 
-        FindFirstMissingPositiveInteger f = new FindFirstMissingPositiveInteger();
-        System.out.println(f.findFirstMissingInt(A));
+        //FindFirstMissingPositiveInteger f = new FindFirstMissingPositiveInteger();
+        KadanesAlgo kad = new KadanesAlgo();
+        System.out.println(kad.kadane(A));
 
     }
 
-    static int[] A = {5, 4, 3, 2, 1, 7, 9};
+    static int[] A = {-10, -2, -3, -1};
 
 }
