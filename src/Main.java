@@ -2,10 +2,11 @@
 // then press Enter. You can now see whitespace characters in your code.
 
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+import ArraysAdvanced.FindFirstMissingPositiveInteger;
+import SortingAlgorithms.CustomComparator;
+import SortingAlgorithms.InsertionSort;
+
 import java.util.Arrays;
-import java.util.List;
 
 public class Main {
 
@@ -14,15 +15,18 @@ public class Main {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
 
-        InsertionSort i = new InsertionSort();
+       /* InsertionSort i = new InsertionSort();
         i.insertionSort(A);
         System.out.println(Arrays.toString(A));
 
         CustomComparator c = new CustomComparator();
-        c.customComparator(A);
+        c.customComparator(A);*/
+
+        FindFirstMissingPositiveInteger f = new FindFirstMissingPositiveInteger();
+        System.out.println(f.findFirstMissingInt(A));
 
     }
 
-    static int[] A = {10,3,8,15,6,12,2,18,7,15,14};
+    static int[] A = {5, 4, 3, 2, 1, 7, 9};
 
 }

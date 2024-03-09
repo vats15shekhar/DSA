@@ -1,3 +1,5 @@
+package SortingAlgorithms;
+
 public class QuickSort {
 
     public int rearrange(int[] A, int s, int e)
