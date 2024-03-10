@@ -3,6 +3,7 @@
 
 
 import ArraysAdvanced.FindFirstMissingPositiveInteger;
+import ArraysAdvanced.FindIfSubArrIsIncOrDecInARange;
 import ArraysAdvanced.KadanesAlgo;
 import SortingAlgorithms.CustomComparator;
 import SortingAlgorithms.InsertionSort;
@@ -24,11 +25,14 @@ public class Main {
         c.customComparator(A);*/
 
         //FindFirstMissingPositiveInteger f = new FindFirstMissingPositiveInteger();
-        KadanesAlgo kad = new KadanesAlgo();
-        System.out.println(kad.kadane(A));
+       // KadanesAlgo kad = new KadanesAlgo();
+       // System.out.println(kad.kadane(A));
+
+        FindIfSubArrIsIncOrDecInARange f = new FindIfSubArrIsIncOrDecInARange();
+        System.out.println(f.incOrDec(A, 9, 12)) ;
 
     }
 
-    static int[] A = {-10, -2, -3, -1};
+    static int[] A = {1, 5, 4, 6, 2, 8, 6, 5, 10, 12, 16, 16, 19};
 
 }
