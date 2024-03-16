@@ -7,32 +7,35 @@ import ArraysAdvanced.FindIfSubArrIsIncOrDecInARange;
 import ArraysAdvanced.KadanesAlgo;
 import SortingAlgorithms.CustomComparator;
 import SortingAlgorithms.InsertionSort;
+import SortingAlgorithms.MergeSort;
+import SortingAlgorithms.MergeSortAlgoRecursion;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.LinkedList;
 
 public class Main {
+
+    public static void demo()
+    {
+
+
+
+    }
 
 
     public static void main(String[] args) {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
 
-       /* InsertionSort i = new InsertionSort();
-        i.insertionSort(A);
-        System.out.println(Arrays.toString(A));
+       // MergeSortAlgoRecursion mr = new MergeSortAlgoRecursion();
+      //  mr.sortAlgo(A,0, A.length - 1);
+      //  System.out.println(Arrays.toString(A));
 
-        CustomComparator c = new CustomComparator();
-        c.customComparator(A);*/
-
-        //FindFirstMissingPositiveInteger f = new FindFirstMissingPositiveInteger();
-       // KadanesAlgo kad = new KadanesAlgo();
-       // System.out.println(kad.kadane(A));
-
-        FindIfSubArrIsIncOrDecInARange f = new FindIfSubArrIsIncOrDecInARange();
-        System.out.println(f.incOrDec(A, 9, 12)) ;
-
+        System.out.println((5+3)/2);
     }
 
-    static int[] A = {1, 5, 4, 6, 2, 8, 6, 5, 10, 12, 16, 16, 19};
+    static int[] A = {20, 5, 4, 2, 15, 18, 25, 100, 79, 43, 54};
 
 }
