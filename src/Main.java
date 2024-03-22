@@ -5,6 +5,7 @@
 import ArraysAdvanced.FindFirstMissingPositiveInteger;
 import ArraysAdvanced.FindIfSubArrIsIncOrDecInARange;
 import ArraysAdvanced.KadanesAlgo;
+import BinarySearch.FindIndex;
 import SortingAlgorithms.CustomComparator;
 import SortingAlgorithms.InsertionSort;
 import SortingAlgorithms.MergeSort;
@@ -29,11 +30,15 @@ public class Main {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
 
-       // MergeSortAlgoRecursion mr = new MergeSortAlgoRecursion();
-      //  mr.sortAlgo(A,0, A.length - 1);
-      //  System.out.println(Arrays.toString(A));
+      /*  MergeSortAlgoRecursion mr = new MergeSortAlgoRecursion();
+        mr.sortAlgo(A,0, A.length - 1);
+        System.out.println(Arrays.toString(A));*/
 
-        System.out.println((5+3)/2);
+       // System.out.println((5+3)/2);
+
+        FindIndex f = new FindIndex();
+        System.out.println(f.find_index(A, 11, 26));
+
     }
 
     static int[] A = {20, 5, 4, 2, 15, 18, 25, 100, 79, 43, 54};

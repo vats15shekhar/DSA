@@ -9,7 +9,7 @@ public class MergeSortAlgoRecursion {
            return;
        }
 
-       int m = (s+e)/2;
+       int m = s + (e-s)/2;
        sortAlgo(A, s, m);
        sortAlgo(A, m+1, e);
 
