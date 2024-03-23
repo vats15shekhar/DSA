@@ -5,6 +5,7 @@
 import ArraysAdvanced.FindFirstMissingPositiveInteger;
 import ArraysAdvanced.FindIfSubArrIsIncOrDecInARange;
 import ArraysAdvanced.KadanesAlgo;
+import ArraysAdvanced.SubMatrixSum;
 import BinarySearch.FindIndex;
 import SortingAlgorithms.CustomComparator;
 import SortingAlgorithms.InsertionSort;
@@ -36,11 +37,13 @@ public class Main {
 
        // System.out.println((5+3)/2);
 
-        FindIndex f = new FindIndex();
-        System.out.println(f.find_index(A, 11, 26));
+
+        SubMatrixSum sm = new SubMatrixSum();
+        System.out.println(sm.submatrix(A, 0, 2, 0, 2));
+
 
     }
 
-    static int[] A = {20, 5, 4, 2, 15, 18, 25, 100, 79, 43, 54};
+    static int[][] A = {{2, 5, 4, 2}, {1, 8, 5, 0}, {7, 3, 5, 9}};
 
 }
