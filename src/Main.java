@@ -35,13 +35,13 @@ public class Main {
        // System.out.println((5+3)/2);
 
 
-        RainWaterTrapped sm = new RainWaterTrapped();
-        System.out.println(sm.rainWaterUnits(B));
+        KSwapsToBringAnElementTogether sm = new KSwapsToBringAnElementTogether();
+        System.out.println(sm.kMinSwaps(B, 8));
 
 
     }
 
     static int[][] A = {{2, 5, -4, 2}, {1, -8, 5, 6}, {7, 3, -5, -9}, {3, 0, 3, -1}};
-    static int[] B = {4,2,5,7,4,2,3,6,8,2,3};
+    static int[] B = {10,4,8,7,8,3,8,-1,8,8};
 
 }
