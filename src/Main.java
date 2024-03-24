@@ -35,12 +35,13 @@ public class Main {
        // System.out.println((5+3)/2);
 
 
-        TwoDKadane sm = new TwoDKadane();
-        System.out.println(sm.twoDKadane(A, 2, 3));
+        RainWaterTrapped sm = new RainWaterTrapped();
+        System.out.println(sm.rainWaterUnits(B));
 
 
     }
 
     static int[][] A = {{2, 5, -4, 2}, {1, -8, 5, 6}, {7, 3, -5, -9}, {3, 0, 3, -1}};
+    static int[] B = {4,2,5,7,4,2,3,6,8,2,3};
 
 }

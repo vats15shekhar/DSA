@@ -40,6 +40,7 @@ public class TwoDKadane {
 
         int[] arr = new int[A[0].length];
 
+        // storing the column wise subarray sum between a1 and a2 in arr
         for(int j = 0 ; j < A[0].length ; j++)
         {
             if(a1 == 0)
