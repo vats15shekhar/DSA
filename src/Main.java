@@ -2,10 +2,7 @@
 // then press Enter. You can now see whitespace characters in your code.
 
 
-import ArraysAdvanced.FindFirstMissingPositiveInteger;
-import ArraysAdvanced.FindIfSubArrIsIncOrDecInARange;
-import ArraysAdvanced.KadanesAlgo;
-import ArraysAdvanced.SubMatrixSum;
+import ArraysAdvanced.*;
 import BinarySearch.FindIndex;
 import SortingAlgorithms.CustomComparator;
 import SortingAlgorithms.InsertionSort;
@@ -38,12 +35,12 @@ public class Main {
        // System.out.println((5+3)/2);
 
 
-        SubMatrixSum sm = new SubMatrixSum();
-        System.out.println(sm.submatrix(A, 0, 2, 0, 2));
+        TwoDKadane sm = new TwoDKadane();
+        System.out.println(sm.twoDKadane(A, 2, 3));
 
 
     }
 
-    static int[][] A = {{2, 5, 4, 2}, {1, 8, 5, 0}, {7, 3, 5, 9}};
+    static int[][] A = {{2, 5, -4, 2}, {1, -8, 5, 6}, {7, 3, -5, -9}, {3, 0, 3, -1}};
 
 }
