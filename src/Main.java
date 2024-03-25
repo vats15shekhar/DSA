@@ -35,13 +35,13 @@ public class Main {
        // System.out.println((5+3)/2);
 
 
-        KSwapsToBringAnElementTogether sm = new KSwapsToBringAnElementTogether();
-        System.out.println(sm.kMinSwaps(B, 8));
+        MaxStrictlyIncSubarray sm = new MaxStrictlyIncSubarray();
+        System.out.println(sm.MaxIncSubarray(B));
 
 
     }
 
     static int[][] A = {{2, 5, -4, 2}, {1, -8, 5, 6}, {7, 3, -5, -9}, {3, 0, 3, -1}};
-    static int[] B = {10,4,8,7,8,3,8,-1,8,8};
+    static int[] B = {4, 8, 9, 7, 6, 2, 1, 5};
 
 }
