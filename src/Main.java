@@ -6,6 +6,7 @@ import ArraysAdvanced.*;
 import BinarySearch.FindFloorOfAnElementInAnSortedArray;
 import BinarySearch.FindFrequency;
 import BinarySearch.FindIndex;
+import BinarySearch.FindPeakInAnUnsortedArray;
 import SortingAlgorithms.CustomComparator;
 import SortingAlgorithms.InsertionSort;
 import SortingAlgorithms.MergeSort;
@@ -37,13 +38,13 @@ public class Main {
        // System.out.println((5+3)/2);
 
 
-        FindFrequency sm = new FindFrequency();
-        System.out.println(sm.frequency(B, 1  ));
+        FindPeakInAnUnsortedArray sm = new FindPeakInAnUnsortedArray();
+        System.out.println(sm.peak(B));
 
 
     }
 
     static int[][] A = {{2, 5, -4, 2}, {1, -8, 5, 6}, {7, 3, -5, -9}, {3, 0, 3, -1}};
-    static int[] B = {-1,1,2,2,5,5,5,5,8,8,9,9,10};
+    static int[] B = {0,2,7,3,9,-1};
 
 }
