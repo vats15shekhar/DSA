@@ -3,6 +3,8 @@
 
 
 import ArraysAdvanced.*;
+import BinarySearch.FindFloorOfAnElementInAnSortedArray;
+import BinarySearch.FindFrequency;
 import BinarySearch.FindIndex;
 import SortingAlgorithms.CustomComparator;
 import SortingAlgorithms.InsertionSort;
@@ -35,13 +37,13 @@ public class Main {
        // System.out.println((5+3)/2);
 
 
-        MaxStrictlyIncSubarray sm = new MaxStrictlyIncSubarray();
-        System.out.println(sm.MaxIncSubarray(B));
+        FindFrequency sm = new FindFrequency();
+        System.out.println(sm.frequency(B, 1  ));
 
 
     }
 
     static int[][] A = {{2, 5, -4, 2}, {1, -8, 5, 6}, {7, 3, -5, -9}, {3, 0, 3, -1}};
-    static int[] B = {4, 8, 9, 7, 6, 2, 1, 5};
+    static int[] B = {-1,1,2,2,5,5,5,5,8,8,9,9,10};
 
 }
