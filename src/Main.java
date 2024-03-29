@@ -3,10 +3,7 @@
 
 
 import ArraysAdvanced.*;
-import BinarySearch.FindFloorOfAnElementInAnSortedArray;
-import BinarySearch.FindFrequency;
-import BinarySearch.FindIndex;
-import BinarySearch.FindPeakInAnUnsortedArray;
+import BinarySearch.*;
 import SortingAlgorithms.CustomComparator;
 import SortingAlgorithms.InsertionSort;
 import SortingAlgorithms.MergeSort;
@@ -38,13 +35,13 @@ public class Main {
        // System.out.println((5+3)/2);
 
 
-        FindPeakInAnUnsortedArray sm = new FindPeakInAnUnsortedArray();
-        System.out.println(sm.peak(B));
+        FindUniqueEleInSortedArr sm = new FindUniqueEleInSortedArr();
+        System.out.println(sm.findUnique(B));
 
 
     }
 
     static int[][] A = {{2, 5, -4, 2}, {1, -8, 5, 6}, {7, 3, -5, -9}, {3, 0, 3, -1}};
-    static int[] B = {0,2,7,3,9,-1};
+    static int[] B = {1,1,3,3,6,6,7,8,8,9,9,10,10};
 
 }
