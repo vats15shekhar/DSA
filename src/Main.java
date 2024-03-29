@@ -35,13 +35,13 @@ public class Main {
        // System.out.println((5+3)/2);
 
 
-        FindUniqueEleInSortedArr sm = new FindUniqueEleInSortedArr();
-        System.out.println(sm.findUnique(B));
+        FindRotationFactorAndTheEleK sm = new FindRotationFactorAndTheEleK();
+        System.out.println(sm.findEle(B, 24));
 
 
     }
 
     static int[][] A = {{2, 5, -4, 2}, {1, -8, 5, 6}, {7, 3, -5, -9}, {3, 0, 3, -1}};
-    static int[] B = {1,1,3,3,6,6,7,8,8,9,9,10,10};
+    static int[] B = {20,23,24,25,1,2,4,7,18};
 
 }
