@@ -35,8 +35,8 @@ public class Main {
        // System.out.println((5+3)/2);
 
 
-        FindSubarraySumOfLengthKLessOrEqualToB sm = new FindSubarraySumOfLengthKLessOrEqualToB();
-        System.out.println(sm.findMaxK(B, 34));
+        SqrtUsingBinarySearch sm = new SqrtUsingBinarySearch();
+        System.out.println(sm.findSqrt(49));
 
 
     }
