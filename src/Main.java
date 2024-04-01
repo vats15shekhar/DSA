@@ -35,13 +35,13 @@ public class Main {
        // System.out.println((5+3)/2);
 
 
-        FindRotationFactorAndTheEleK sm = new FindRotationFactorAndTheEleK();
-        System.out.println(sm.findEle(B, 24));
+        FindSubarraySumOfLengthKLessOrEqualToB sm = new FindSubarraySumOfLengthKLessOrEqualToB();
+        System.out.println(sm.findMaxK(B, 34));
 
 
     }
 
     static int[][] A = {{2, 5, -4, 2}, {1, -8, 5, 6}, {7, 3, -5, -9}, {3, 0, 3, -1}};
-    static int[] B = {20,23,24,25,1,2,4,7,18};
+    static int[] B = {2, 5, 7, 9, 10, 12, 18, 21, 25, 30};
 
 }
