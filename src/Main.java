@@ -35,13 +35,13 @@ public class Main {
        // System.out.println((5+3)/2);
 
 
-        MinTimeTakenByKWorkersToFinishTask sm = new MinTimeTakenByKWorkersToFinishTask();
-        System.out.println(sm.findMinTime(B, 4));
+        MaximizeTheMinDiffBetCows sm = new MaximizeTheMinDiffBetCows();
+        System.out.println(sm.maximizeMinDis(B, 4));
 
 
     }
 
     static int[][] A = {{2, 5, -4, 2}, {1, -8, 5, 6}, {7, 3, -5, -9}, {3, 0, 3, -1}};
-    static int[] B = {5, 1, 2, 6, 7, 3, 8, 1, 8, 9, 10};
+    static int[] B = {2, 5, 6, 9, 12, 13, 14, 16, 18, 19, 21, 24};
 
 }
