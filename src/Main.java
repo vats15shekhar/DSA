@@ -20,15 +20,15 @@ public class Main {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
 
-        FindTheKthIndexValueAfterSorting fk = new FindTheKthIndexValueAfterSorting();
-        System.out.println(fk.findKthElement(B, 6));
+        FindKthEleIn2SortedArrays fk = new FindKthEleIn2SortedArrays();
+        System.out.println(fk.FindKthIndexElement(A, B, 2));
 
 
 
     }
 
    //Coding Scenario;  {9, 3, 3, 4} & {10, 11, 11, 12} merge, Sort and remove duplicate values.
-    static int[] A = {9, 3, 3, 4};
-    static int[] B = {9, 2, 1, 4, 8, 6, 7};
+    static int[] A = {4, 7, 8, 9, 10};
+    static int[] B = {8, 9, 10, 11, 12, 13, 14, 15};
 
 }
