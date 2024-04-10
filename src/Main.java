@@ -20,21 +20,15 @@ public class Main {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
 
-      /*  MergeSortAlgoRecursion mr = new MergeSortAlgoRecursion();
-        mr.sortAlgo(A,0, A.length - 1);
-        System.out.println(Arrays.toString(A));*/
+        FindTheKthIndexValueAfterSorting fk = new FindTheKthIndexValueAfterSorting();
+        System.out.println(fk.findKthElement(B, 6));
 
-       // System.out.println((5+3)/2);
-
-
-
-        FindAthMagicalNumber sm = new FindAthMagicalNumber();
-        System.out.println(sm.findAthMagicalNumber(2, 3, 5));
 
 
     }
 
-    static int[][] A = {{2, 5, -4, 2}, {1, -8, 5, 6}, {7, 3, -5, -9}, {3, 0, 3, -1}};
-    static int[] B = {1, 7, 67, 133, 178 };
+   //Coding Scenario;  {9, 3, 3, 4} & {10, 11, 11, 12} merge, Sort and remove duplicate values.
+    static int[] A = {9, 3, 3, 4};
+    static int[] B = {9, 2, 1, 4, 8, 6, 7};
 
 }
