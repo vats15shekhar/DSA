@@ -8,6 +8,7 @@ import SortingAlgorithms.CustomComparator;
 import SortingAlgorithms.InsertionSort;
 import SortingAlgorithms.MergeSort;
 import SortingAlgorithms.MergeSortAlgoRecursion;
+import TwoPointer.FindIfDiffExistsInAnArray;
 import TwoPointer.FindIfSumExistsInArray;
 
 import java.util.ArrayList;
@@ -21,15 +22,13 @@ public class Main {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
 
-        FindIfSumExistsInArray fk = new FindIfSumExistsInArray();
-        System.out.println(fk.findIfSumExists(A, 11));
-
-
+        FindIfDiffExistsInAnArray fk = new FindIfDiffExistsInAnArray();
+        System.out.println(fk.findDiff(A, 16));
 
     }
 
    //Coding Scenario;  {9, 3, 3, 4} & {10, 11, 11, 12} merge, Sort and remove duplicate values.
-    static int[] A = {4, 7, 8, 9, 10};
+    static int[] A = {2, 4, 8, 13, 16, 17};
     static int[] B = {8, 9, 10, 11, 12, 13, 14, 15};
 
 }
