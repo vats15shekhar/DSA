@@ -10,6 +10,7 @@ import SortingAlgorithms.MergeSort;
 import SortingAlgorithms.MergeSortAlgoRecursion;
 import TwoPointer.FindIfDiffExistsInAnArray;
 import TwoPointer.FindIfSumExistsInArray;
+import TwoPointer.RainWaterUsingTwoPointers;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,13 +23,13 @@ public class Main {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
 
-        FindIfDiffExistsInAnArray fk = new FindIfDiffExistsInAnArray();
-        System.out.println(fk.findDiff(A, 16));
+        RainWaterUsingTwoPointers fk = new RainWaterUsingTwoPointers();
+        System.out.println(fk.maxRainWaterBetweenBuildings(A));
 
     }
 
    //Coding Scenario;  {9, 3, 3, 4} & {10, 11, 11, 12} merge, Sort and remove duplicate values.
-    static int[] A = {2, 4, 8, 13, 16, 17};
+    static int[] A = {3, 5, 3, 6, 4};
     static int[] B = {8, 9, 10, 11, 12, 13, 14, 15};
 
 }
