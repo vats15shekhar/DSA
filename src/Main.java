@@ -8,6 +8,7 @@ import SortingAlgorithms.CustomComparator;
 import SortingAlgorithms.InsertionSort;
 import SortingAlgorithms.MergeSort;
 import SortingAlgorithms.MergeSortAlgoRecursion;
+import TwoPointer.FindIfSumExistsInArray;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,8 +21,8 @@ public class Main {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
 
-        FindKthEleIn2SortedArrays fk = new FindKthEleIn2SortedArrays();
-        System.out.println(fk.FindKthIndexElement(A, B, 2));
+        FindIfSumExistsInArray fk = new FindIfSumExistsInArray();
+        System.out.println(fk.findIfSumExists(A, 11));
 
 
 
