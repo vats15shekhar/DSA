@@ -4,6 +4,7 @@
 
 import ArraysAdvanced.*;
 import BinarySearch.*;
+import Graphs.FindIfAVisitsBInGraph;
 import SortingAlgorithms.CustomComparator;
 import SortingAlgorithms.InsertionSort;
 import SortingAlgorithms.MergeSort;
@@ -24,15 +25,14 @@ public class Main {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
 
-        MinimizeDiffIn3Arrays fk = new MinimizeDiffIn3Arrays();
-        System.out.println(fk.minimizeDiff(A, B, C));
+        FindIfAVisitsBInGraph fk = new FindIfAVisitsBInGraph();
+        System.out.println(fk.path(A, B));
 
     }
 
    //Coding Scenario;  {9, 3, 3, 4} & {10, 11, 11, 12} merge, Sort and remove duplicate values.
-    static int[] A = {3, 14, 16, 20, 29, 40};
-    static int[] B = {-6, 23, 24, 30, 35, 50};
+    static int A = 5;
+    static int[][] B = {{1, 2}, {4, 1}, {2, 4}, {3, 4}, {5, 2},{1, 3}} ;
 
-    static int[] C = {-15, 15, 26, 31, 39, 42};
 
 }
