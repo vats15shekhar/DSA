@@ -18,7 +18,7 @@ public class FindIfAVisitsBInGraph {
         // In this queue we keep inserting the nodes as we visit them
         LinkedList<Integer> queue = new LinkedList<Integer>();
 
-        // Adding a list for each node in the grph
+        // Adding a list for each node in the graph
         for(int i = 0 ; i <= A ; i++) {
             graph.add(i ,new ArrayList<>());
         }
@@ -37,7 +37,6 @@ public class FindIfAVisitsBInGraph {
         while(!queue.isEmpty())
         {
             Integer top = queue.poll();
-
 
             for(int i = 0 ; i < graph.get(top).size() ; i++) {
                 // Only is  node is not visited, we add it to the queue

@@ -4,35 +4,40 @@
 
 import ArraysAdvanced.*;
 import BinarySearch.*;
+import Graphs.ConnectedComponent;
 import Graphs.FindIfAVisitsBInGraph;
+import Graphs.NumberOfIslands;
 import SortingAlgorithms.CustomComparator;
 import SortingAlgorithms.InsertionSort;
 import SortingAlgorithms.MergeSort;
 import SortingAlgorithms.MergeSortAlgoRecursion;
+import TescoOrder.Container;
+import TescoOrder.ProductVolume;
 import TwoPointer.FindIfDiffExistsInAnArray;
 import TwoPointer.FindIfSumExistsInArray;
 import TwoPointer.MinimizeDiffIn3Arrays;
 import TwoPointer.RainWaterUsingTwoPointers;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.LinkedList;
+import java.util.*;
+
 
 public class Main {
 
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
 
-        FindIfAVisitsBInGraph fk = new FindIfAVisitsBInGraph();
-        System.out.println(fk.path(A, B));
+        int A = 6;
+        int[][] B  =  {{0,1}, {0,2}, {1,2}, {3,4}};
+        int[][] grid = {{1,0,1,1},
+                {1,1,0,0},
+                {1,0,0,1},
+                {0,0,1,1}};
 
+        NumberOfIslands numberOfIslands = new NumberOfIslands();
+        int g = numberOfIslands.numIslands(grid);
+        System.out.println(g);
     }
 
-   //Coding Scenario;  {9, 3, 3, 4} & {10, 11, 11, 12} merge, Sort and remove duplicate values.
-    static int A = 5;
-    static int[][] B = {{1, 2}, {4, 1}, {2, 4}, {3, 4}, {5, 2},{1, 3}} ;
+
 
 
 }
