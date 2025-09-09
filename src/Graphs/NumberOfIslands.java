@@ -39,3 +39,16 @@ public class NumberOfIslands {
     }
 
 }
+
+/* Input to Number of Islands Problem
+ int A = 6;
+        int[][] B  =  {{0,1}, {0,2}, {1,2}, {3,4}};
+        int[][] grid = {{1,0,1,1},
+                {1,1,0,0},
+                {1,0,0,1},
+                {0,0,1,1}};
+
+        NumberOfIslands numberOfIslands = new NumberOfIslands();
+        int g = numberOfIslands.numIslands(grid);
+        System.out.println(g);
+ */

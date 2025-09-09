@@ -2,42 +2,32 @@
 // then press Enter. You can now see whitespace characters in your code.
 
 
-import ArraysAdvanced.*;
-import BinarySearch.*;
-import Graphs.ConnectedComponent;
-import Graphs.FindIfAVisitsBInGraph;
-import Graphs.NumberOfIslands;
-import SortingAlgorithms.CustomComparator;
-import SortingAlgorithms.InsertionSort;
-import SortingAlgorithms.MergeSort;
-import SortingAlgorithms.MergeSortAlgoRecursion;
-import TescoOrder.Container;
-import TescoOrder.ProductVolume;
-import TwoPointer.FindIfDiffExistsInAnArray;
-import TwoPointer.FindIfSumExistsInArray;
-import TwoPointer.MinimizeDiffIn3Arrays;
-import TwoPointer.RainWaterUsingTwoPointers;
+import ArraysAdvanced.GroupAnagrams;
+import ArraysAdvanced.ProductOfArrayExceptSelf;
+import Graphs.BellmanFordAlgorithm;
+import Graphs.DijkstraLatest;
+import GraphsGoogle.RevEdgesForShortestPath;
+import GraphsGoogle.ZeroOneBFS;
+import Practice.Practice;
+import Practice.Graph;
+import StringProblems.FirstRepeatingChar;
+import StringProblems.IfCharsInStrCanFormPalindrome;
+import StringProblems.ValidParenthesis;
+import TescoOrder.B;
+import TescoOrder.A;
 
 import java.util.*;
 
 
 public class Main {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
-        int A = 6;
-        int[][] B  =  {{0,1}, {0,2}, {1,2}, {3,4}};
-        int[][] grid = {{1,0,1,1},
-                {1,1,0,0},
-                {1,0,0,1},
-                {0,0,1,1}};
+                //Input: src = 0, V = 5, edges[][] = [[0, 1, 4], [0, 2, 8], [1, 4, 6], [2, 3, 2], [3, 4, 10]]
+                DijkstraLatest dijkstra = new DijkstraLatest();
+                List<List<List<Integer>>> gp =  dijkstra.graphConstruction(0, 5, new int[][]{{0, 1, 4}, {0, 2, 8}, {1, 4, 6}, {2, 3, 2}, {3, 4, 10}});
+                System.out.println(Arrays.toString(dijkstra.dijkstraPractice(gp, 0, 5)));
 
-        NumberOfIslands numberOfIslands = new NumberOfIslands();
-        int g = numberOfIslands.numIslands(grid);
-        System.out.println(g);
-    }
-
-
-
+        }
 
 }

@@ -1,20 +1,17 @@
 package TescoOrder;
+ public class B extends A {
 
-public class Container {
-    public long smallContainerVolume ()
+    public void print(int i)
     {
-        return 10*20*30;
+        System.out.println(i + " :I am a child");
     }
 
-    public long mediumContainerVolume ()
+    public void print(Float j)
     {
-        return 50*60*70;
+        System.out.println(j + " :I am a child");
     }
 
-    public long largeContainerVolume ()
-    {
-        return 100*200*300;
-    }
+
 }
 
 /*

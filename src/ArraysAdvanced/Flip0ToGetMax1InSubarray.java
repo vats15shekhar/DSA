@@ -26,7 +26,8 @@ public class Flip0ToGetMax1InSubarray {
 
     public int maxOnesInASubarrayAfterFlipping(int[] A)
     {
-        // iterating on this array to flip the 1s to -1 because once flipped, they will become 0 and they will have a negative contribution in the sum
+        // iterating on this array to flip the 1s to -1 because once flipped,
+        // they will become 0 and they will have a negative contribution in the sum
 
         for(int i = 0 ; i < A.length ; i++)
         {

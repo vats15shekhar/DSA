@@ -2,7 +2,9 @@ package BinarySearch;
 
 public class FindIndex {
 
-   // Given a sorted array arr[] consisting of N distinct integers and an integer K, the task is to find the index of K, if it’s present in the array arr[]. Otherwise, find the index where K must be inserted to keep the array sorted.
+    // Given a sorted array arr[] consisting of N distinct integers and an integer K,
+    // the task is to find the index of K, if it’s present in the array arr[]. Otherwise,
+    // find the index where K must be inserted to keep the array sorted.
 
     public int find_index(int[] arr, int n, int K)
     {

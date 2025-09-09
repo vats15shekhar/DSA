@@ -5,7 +5,8 @@ public class KSwapsToBringAnElementTogether {
     public int kMinSwaps(int[] A, int num)
     {
         int l = 0;
-        //looping through the input array to find the total number of elements we want to bring together
+        //looping through the input array to find the total number of elements we
+        // want to bring together
 
         for(int i = 0 ; i <A.length ; i++)
         {
@@ -15,7 +16,8 @@ public class KSwapsToBringAnElementTogether {
             }
         }
 
-        // We will take a window of length l and find out the total number of num elements in the first window 0 to l-1
+        // We will take a window of length l and find out the total number
+        // of num elements in the first window 0 to l-1
         int cnt = 0;
         int minswap = Integer.MAX_VALUE;
 
@@ -27,7 +29,8 @@ public class KSwapsToBringAnElementTogether {
             }
         }
 
-        // The number of swap required to get all num elements together, is the total length - number of num elements in the 1st window
+        // The number of swap required to get all num elements together,
+        // is the total length - number of num elements in the 1st window
         minswap = l - cnt;
 
 

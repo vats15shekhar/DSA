@@ -10,7 +10,9 @@ public class FindKthEleIn2SortedArrays {
         int l = 0;
         int h = A.length - 1;
         int mid = 0;
-        // Initializing the ans to -1, because if there are no elements less than k, we want to send the cnt as 0. In the return we are adding 1 to ans and returning. A -1 will indicate that there are no lesser elements and cnt will be returned as 0
+        // Initializing the ans to -1, because if there are no elements less than k,
+        // we want to send the cnt as 0. In the return we are adding 1 to ans and returning.
+        // A -1 will indicate that there are no lesser elements and cnt will be returned as 0
         int ans = -1;
 
         while(l <= h)

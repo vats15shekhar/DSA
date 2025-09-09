@@ -37,7 +37,6 @@ public class ConnectedComponent {
 
     public void DFS(int[] visited, ArrayList<ArrayList<Integer>> graph, int s)
     {
-
         if(visited[s] == 1)
         {
             return;
