@@ -21,7 +21,6 @@ public class Dijkstras {
 
         while(!minHeap.isEmpty())
         {
-
             List<Integer> cur = minHeap.poll();
             Integer d = cur.get(0);
             Integer u = cur.get(1);

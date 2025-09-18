@@ -3,46 +3,38 @@ package Practice;
 import java.util.*;
 
 public class Practice {
-    /**
-     *
-     * nums = [2,7,11,15], target = 9
-     */
 
-    public boolean checkAnagram(String a, String b) {
+    public int unitOfRainwaterTrapped(int[] rainwater){
 
-        HashSet<Character> set = new HashSet<>();
-        if(a != null && b != null){
-            for(int i = 0; i < a.length(); i++) {
-                set.add(a.charAt(i));
-            }
+        int n = rainwater.length;
+        int[] leftmax = new int[n];
+        int[] rightmax = new int[n];
+        leftmax[0] = rainwater[0];
+        rightmax[n-1] = rainwater[n-1];
 
-            for(int i = 0; i < b.length(); i++) {
-                if(!set.contains(b.charAt(i))) {
-                    return false;
-                }
-            }
+        //Get the maximum height if the building from the left side
+        for(int i = 1; i < rainwater.length; i++){
+            leftmax[i] = Math.max(leftmax[i-1], rainwater[i]);
         }
-        return true;
-    }
 
-    public List<List<String>> groupAnagrams(String[] s) {
-
-        List<List<String>> res = new ArrayList<>();
-
-        for(int i = 0; i < s.length; i++) {
-            List<String> anagramgroup = new ArrayList<>();
-            anagramgroup.add(s[i]);
-
-            for(int j = i + 1; j < s.length; j++) {
-                if(checkAnagram(s[i], s[j])){
-                    anagramgroup.add(s[j]);
-                }
-            }
-
-            res.add(anagramgroup);
-           s[i] = null;
+        //Get the maximum height of the building from the right side
+        for(int i = n-2 ; i >=0 ; i--){
+            rightmax[i] = Math.max(rightmax[i+1], rainwater[i]);
         }
-        return res;
+
+        int totalwaterunits = 0;
+
+        for(int i = 1 ; i < n-1 ; i++){
+
+         int   lmax = leftmax[i-1];
+         int   rmax = rightmax[i+1];
+
+         int h = Math.min(lmax,rmax);
+
+         totalwaterunits += Math.max(h- rainwater[i], 0);
+        }
+        return totalwaterunits;
+
     }
 
 }

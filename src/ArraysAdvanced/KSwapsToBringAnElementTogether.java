@@ -58,7 +58,6 @@ public class KSwapsToBringAnElementTogether {
             s++;
             e++;
         }
-
         return minswap;
     }
 }

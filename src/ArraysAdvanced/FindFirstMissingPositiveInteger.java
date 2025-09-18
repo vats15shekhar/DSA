@@ -34,7 +34,7 @@ public class FindFirstMissingPositiveInteger {
             }
         }
 
-        for(int j = 0 ; j <n ; j++)
+        for(int j = 0 ; j < n ; j++)
         {
             if(Math.abs(A[j]) <= n && Math.abs(A[j]) > 0)
             {// We are first checking if the Absolute value of the element is less than n and greater than 0

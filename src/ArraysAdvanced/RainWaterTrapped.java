@@ -10,13 +10,13 @@ public class RainWaterTrapped {
         prefixMax[0] = A[0];
         suffixMax[A.length - 1] = A[A.length - 1];
 
-        // Generating prefix max
+        // Generating prefix max. left max array
         for(int i = 1 ; i < A.length ;i++)
         {
             prefixMax[i] = Math.max(prefixMax[i-1], A[i]);
         }
 
-        // generating suffix max
+        // generating suffix max. Right max array
         for(int j = A.length - 2 ; j >= 0 ; j--)
         {
             suffixMax[j] = Math.max(suffixMax[j+1], A[j]);

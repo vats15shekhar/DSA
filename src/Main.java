@@ -24,9 +24,12 @@ public class Main {
         public static void main(String[] args) {
 
                 //Input: src = 0, V = 5, edges[][] = [[0, 1, 4], [0, 2, 8], [1, 4, 6], [2, 3, 2], [3, 4, 10]]
-                DijkstraLatest dijkstra = new DijkstraLatest();
-                List<List<List<Integer>>> gp =  dijkstra.graphConstruction(0, 5, new int[][]{{0, 1, 4}, {0, 2, 8}, {1, 4, 6}, {2, 3, 2}, {3, 4, 10}});
-                System.out.println(Arrays.toString(dijkstra.dijkstraPractice(gp, 0, 5)));
+               // DijkstraLatest dijkstra = new DijkstraLatest();
+               // List<List<List<Integer>>> gp =  dijkstra.graphConstruction(0, 5, new int[][]{{0, 1, 4}, {0, 2, 8}, {1, 4, 6}, {2, 3, 2}, {3, 4, 10}});
+              //  System.out.println(Arrays.toString(dijkstra.dijkstraPractice(gp, 0, 5)));
+
+                Practice p = new Practice();
+                System.out.println(p.unitOfRainwaterTrapped(new int[]{2,1,3,2,1,2,4,3,2,1,3,1}));
 
         }
 

@@ -29,7 +29,6 @@ public class BFS {
         int u = 0;
 
         while(!queue.isEmpty()){
-
             u = queue.peek();
             queue.poll();
 
@@ -43,9 +42,7 @@ public class BFS {
                     queue.add(v);
                 }
             }
-
         }
-
         return vis;
     }
 
